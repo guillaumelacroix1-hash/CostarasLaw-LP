@@ -13,7 +13,7 @@ const GuideSection = () => {
         setStatus('loading');
         setTimeout(() => {
             // Force PDF download using fetch
-            fetch('/10-questions-guide.pdf')
+            fetch(`${import.meta.env.BASE_URL}10-questions-guide.pdf`)
                 .then(response => response.blob())
                 .then(blob => {
                     const url = window.URL.createObjectURL(blob);
@@ -145,7 +145,7 @@ const GuideSection = () => {
                             <div className="absolute -inset-4 bg-gradient-to-tr from-secondary/30 to-primary/10 rounded-[2rem] blur-2xl opacity-50"></div>
 
                             <img
-                                src="/ebook-visual.jpg"
+                                src={`${import.meta.env.BASE_URL}ebook-visual.jpg`}
                                 alt="10-Point Asset Protection Checklist Guide"
                                 className="relative rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-800 w-full object-cover transform rotate-1 hover:rotate-0 transition-transform duration-500"
                             />

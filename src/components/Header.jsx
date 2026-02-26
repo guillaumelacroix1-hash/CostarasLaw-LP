@@ -15,7 +15,7 @@ const Header = () => {
 
                     <div className="flex-shrink-0 flex items-center gap-2 md:gap-3">
                         <div className="h-8 w-8 md:h-11 md:w-11 flex items-center justify-center">
-                            <img src="/logo.png" alt="Costaras Law Logo" className="w-full h-full object-contain" />
+                            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Costaras Law Logo" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex flex-col">
                             <span className="font-display font-bold text-xl md:text-2xl tracking-tight text-primary dark:text-white leading-none">Costaras Law</span>

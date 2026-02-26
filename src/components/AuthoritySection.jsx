@@ -83,8 +83,7 @@ const AuthoritySection = () => {
                     <div className="mt-10 flex items-center justify-center gap-4">
                         <img
                             alt="Nicholas Costaras"
-                            className="w-14 h-14 rounded-full object-cover ring-2 ring-secondary/50 shadow-lg"
-                            src="/nicholas-costaras.jpg"
+                            src={`${import.meta.env.BASE_URL}nicholas-costaras.jpg`}
                         />
                         <div className="text-left">
                             <p className="font-bold text-primary dark:text-white text-base">Nicholas Costaras</p>

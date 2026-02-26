@@ -52,8 +52,7 @@ const Hero = () => {
                             <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                                 <img
                                     alt="Successful real estate investor"
-                                    className="w-full h-full object-cover"
-                                    src="/hero-men-composition.jpg"
+                                    src={`${import.meta.env.BASE_URL}hero-men-composition.jpg`}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-secondary/10 mix-blend-overlay"></div>
                                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent"></div>
@@ -121,7 +120,7 @@ const Hero = () => {
                                         whileHover={{ scale: 1.05 }}
                                         className="w-full h-full shadow-2xl rounded-2xl overflow-hidden border-4 border-white dark:border-gray-800 cursor-pointer"
                                     >
-                                        <img src="/american-house.png" alt="American House" className="w-full h-full object-cover" />
+                                        <img src={`${import.meta.env.BASE_URL}american-house.png`} alt="American House" className="w-full h-full object-cover" />
                                     </motion.div>
                                 </motion.div>
 
