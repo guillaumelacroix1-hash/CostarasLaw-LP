@@ -52,6 +52,7 @@ const Hero = () => {
                             <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                                 <img
                                     alt="Successful real estate investor"
+                                    className="w-full h-full object-cover"
                                     src={`${import.meta.env.BASE_URL}hero-men-composition.jpg`}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-secondary/10 mix-blend-overlay"></div>
