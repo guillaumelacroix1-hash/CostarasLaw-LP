@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
-import { motion, useSpring } from 'framer-motion';
+import React, { useRef, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import DownloadModal from './DownloadModal';
 import InlineLeadForm from './InlineLeadForm';
 
 const Hero = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const videoRef = useRef(null);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (e) => {
@@ -32,7 +35,18 @@ const Hero = () => {
                         </p>
 
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <InlineLeadForm />
+                            <motion.button
+                                whileHover={{ scale: 1.02 }}
+                                whileTap={{ scale: 0.98 }}
+                                onClick={() => setIsModalOpen(true)}
+                                className="group relative w-full sm:w-auto px-8 py-5 bg-white dark:bg-card-dark text-primary dark:text-white rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all overflow-hidden"
+                            >
+                                <span className="relative z-10 flex items-center justify-center gap-2">
+                                    <span className="material-symbols-outlined text-secondary">download</span>
+                                    <span>Get Your Free 10-Point Checklist</span>
+                                </span>
+                                <div className="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </motion.button>
                         </div>
 
                         <div className="mt-6 flex items-center gap-2 text-sm text-text-muted-light dark:text-text-muted-dark justify-center lg:justify-start">
@@ -174,6 +188,11 @@ const Hero = () => {
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDME5TZHtKvdpm9qjWtSnuDQTL0gxIrupAgPekxQU2zXB3BFLAzHPB43r2BT4_0FjsTbbD42ADSIsTsPAgdqExaBa3SVnTf-EdQuseIvp1EtgJmJekjpwhk-UDRkEx4PP9XkzvD-4XEnPNZrpviydqPh1X_SYlHPP9J2AqLzqsD-3tYOOgsI9nLMopQogi6OkOS22q0lQMITntFYfY9NR9wxwPo2nR1eepZKzXBOZ-IrxHmcWmsWdWzaFlcZgBJHZg5BXoSaH0H9BpH"
                 />
             </div>
+
+            <DownloadModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+            />
         </section>
     );
 };

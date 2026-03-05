@@ -1,43 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import DownloadModal from './DownloadModal';
 
 const GuideSection = () => {
-    const [showForm, setShowForm] = useState(false);
-    const [email, setEmail] = useState('');
-    const [status, setStatus] = useState('idle');
-
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-        if (!email) return;
-
-        setStatus('loading');
-        setTimeout(() => {
-            // Force PDF download using fetch
-            fetch(`${import.meta.env.BASE_URL}10-questions-guide.pdf`)
-                .then(response => response.blob())
-                .then(blob => {
-                    const url = window.URL.createObjectURL(blob);
-                    const link = document.createElement('a');
-                    link.href = url;
-                    link.download = 'Costaras_Law_Asset_Protection_Checklist.pdf';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                    window.URL.revokeObjectURL(url);
-                    setStatus('success');
-                })
-                .catch(err => {
-                    console.error("Download failed", err);
-                    setStatus('idle');
-                });
-
-            setTimeout(() => {
-                setStatus('idle');
-                setShowForm(false);
-                setEmail('');
-            }, 3000);
-        }, 1500);
-    };
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const features = [
         {
             title: "Tie-Breakers",
@@ -104,31 +70,15 @@ const GuideSection = () => {
                         </div>
 
                         <div className="pt-4 min-h-[60px] flex items-center">
-                            <form
-                                className="flex flex-col sm:flex-row w-full max-w-sm gap-3"
-                                onSubmit={handleFormSubmit}
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                onClick={() => setIsModalOpen(true)}
+                                className="whitespace-nowrap py-4 px-10 border border-transparent rounded-full shadow-lg font-semibold text-white bg-secondary hover:bg-yellow-600 focus:outline-none transition-all flex items-center gap-3"
                             >
-                                <input
-                                    className="flex-grow px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-text-main-light dark:text-text-main-dark focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all shadow-sm"
-                                    placeholder="Enter your email"
-                                    type="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    disabled={status === 'loading' || status === 'success'}
-                                    required
-                                />
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="whitespace-nowrap py-2 px-6 border border-transparent rounded-lg shadow-md font-semibold text-white bg-secondary hover:bg-yellow-600 focus:outline-none transition-colors disabled:opacity-75"
-                                    type="submit"
-                                    disabled={status === 'loading' || status === 'success'}
-                                >
-                                    {status === 'idle' && 'Get Checklist'}
-                                    {status === 'loading' && 'Loading...'}
-                                    {status === 'success' && 'Downloading...'}
-                                </motion.button>
-                            </form>
+                                <span className="material-symbols-outlined">download</span>
+                                Download the checklist ebook
+                            </motion.button>
                         </div>
                     </motion.div>
 
@@ -151,6 +101,11 @@ const GuideSection = () => {
 
                 </div>
             </div>
+
+            <DownloadModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+            />
         </section>
     );
 };
