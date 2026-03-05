@@ -138,16 +138,13 @@ const GuideSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="relative flex justify-center lg:justify-end"
+                        className="relative flex justify-center lg:justify-start"
                     >
-                        <div className="relative w-full max-w-md">
-                            {/* Decorative background blur */}
-                            <div className="absolute -inset-4 bg-gradient-to-tr from-secondary/30 to-primary/10 rounded-[2rem] blur-2xl opacity-50"></div>
-
+                        <div className="relative w-full max-w-[300px] lg:ml-[50px]">
                             <img
-                                src={`${import.meta.env.BASE_URL}ebook-visual.jpg`}
+                                src="https://assets.cdn.filesafe.space/7ddkjb0m1qKwq9PPcv33/media/6998907908245e0752062524.png"
                                 alt="10-Point Asset Protection Checklist Guide"
-                                className="relative rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-800 w-full object-cover transform rotate-1 hover:rotate-0 transition-transform duration-500"
+                                className="relative w-full h-auto object-contain transform rotate-1 hover:rotate-0 transition-transform duration-500"
                             />
                         </div>
                     </motion.div>

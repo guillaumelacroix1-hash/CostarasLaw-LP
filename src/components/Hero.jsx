@@ -37,7 +37,7 @@ const Hero = () => {
 
                         <div className="mt-6 flex items-center gap-2 text-sm text-text-muted-light dark:text-text-muted-dark justify-center lg:justify-start">
                             <span className="material-symbols-outlined text-secondary text-lg">check_circle</span>
-                            <span>Trusted by 500+ Ohio Investors</span>
+                            <span>Rating on Google (20+ reviews)</span>
                         </div>
                     </motion.div>
 
@@ -106,7 +106,7 @@ const Hero = () => {
                                                 ))}
                                             </div>
                                         </div>
-                                        <p className="text-[0.65rem] text-gray-600 uppercase tracking-widest font-bold">150+ Reviews</p>
+                                        <p className="text-[0.65rem] text-gray-600 uppercase tracking-widest font-bold">RATING ON GOOGLE</p>
                                     </motion.div>
                                 </motion.div>
 
@@ -121,7 +121,16 @@ const Hero = () => {
                                         whileHover={{ scale: 1.05 }}
                                         className="w-full h-full shadow-2xl rounded-2xl overflow-hidden border-4 border-white dark:border-gray-800 cursor-pointer"
                                     >
-                                        <img src={`${import.meta.env.BASE_URL}american-house.png`} alt="American House" className="w-full h-full object-cover" />
+                                        <video
+                                            src={`${import.meta.env.BASE_URL}house.mp4`}
+                                            poster={`${import.meta.env.BASE_URL}house.jpg`}
+                                            className="w-full h-full object-cover"
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                            onCanPlay={(e) => e.target.playbackRate = 0.8}
+                                        />
                                     </motion.div>
                                 </motion.div>
 

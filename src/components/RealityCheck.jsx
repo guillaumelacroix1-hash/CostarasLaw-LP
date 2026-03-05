@@ -29,9 +29,10 @@ const RealityCheck = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
                         transition={{ duration: 0.5, delay: 0 }}
-                        className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 group"
+                        className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group"
                     >
                         <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                             <span className="material-symbols-outlined text-secondary text-2xl">warning</span>
@@ -46,9 +47,10 @@ const RealityCheck = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
                         transition={{ duration: 0.5, delay: 0.15 }}
-                        className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 group relative overflow-hidden"
+                        className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group relative overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-full -mr-4 -mt-4"></div>
                         <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
@@ -64,9 +66,10 @@ const RealityCheck = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
                         transition={{ duration: 0.5, delay: 0.3 }}
-                        className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 group"
+                        className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group"
                     >
                         <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                             <span className="material-symbols-outlined text-secondary text-2xl">person_off</span>

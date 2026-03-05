@@ -3,22 +3,40 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
     {
-        text: "With Costaras Law, we got clear, concise guidance and efficient legal support, making what was once a complex process, surprisingly straightforward.",
-        name: "Sarah Jenkins",
-        role: "Real Estate Developer",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBhBnu111OLM4SdBOpGMa5PGZkpEJIeXLEFFu3PQQj3QJ7dQ8Wp9Wuo2rJ2IKK0LFHK6yahnVQP6ZG6KAJKna6qVZZiBdw6aMp5RgW6W3CFQUzD4QqKnIfJ6oLOlBR5t-C2grXCb6wI42B9IWruQyaIz71KEMMiCuMS1pahllZmbAdpJr15nvT86Gk-zlXzGDIuUI6rfSq3tuTF8Xz5gnurge_ZHvUrSBIb5ZLZXcGQHsPuZj4SgMxoIIwEuFcYsz3jTAohdlqDZfLq"
+        text: "I had the absolute pleasure of collaborating with the Costaras Law team (specifically Anne and Nicholas), and I am incredibly impressed by their professionalism. Having seen their process from the inside, their level of expertise in real estate asset protection and LLC structuring in Ohio is unmatched. They don't just file paperwork; they build true legal fortresses for investors.",
+        name: "Guillaume Lacroix",
+        role: "Real Estate Investor",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
     },
     {
-        text: "The peace of mind is priceless. Nicholas identified risks in our structure that our previous attorney completely missed.",
-        name: "Marcus Thorne",
-        role: "Portfolio Manager",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcP2UcA7PKyrAX1hwSgqxJzBnVTghTsREnyX-tzhbGklRkvPI7rTC_lcwWmVTj5cUxGg_7bNEHJu_n3UhNEKX_ygy3Z0ciojA0A34BgRY8J75C0JM0T72Xf02dqzyNVjJ7zh1DBbxL-YJU0ZlmucbAh1To8aEtqETCeeNm4uZ6F1kLiOrSdqovKNYJG5B14hg4ggxgAp4NjUvVjXb0SeWWopznhTTnW2hwkpn07er_bFDwK8USVI-fvCrTcvV_xeho515Jn8J-39rn"
+        text: "Costaras Law is without a doubt the best in the business!!! Helped us with our new acquisition and made it so seamless!!! Highly recommended.",
+        name: "Joshua Rust",
+        role: "Real Estate Investor",
+        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80"
     },
     {
-        text: "Finally, an attorney who speaks plain English. The checklist was an eye-opener for our partnership.",
-        name: "Elena Rodriguez",
+        text: "Mr. Costaras has always been a pleasure to work with. His level of professionalism is top notch, BAR none. You can rest assured that your trust and estate planning needs will be met with a caring heart and a sharp mind.",
+        name: "Manda Mance Wilkinson",
+        role: "Estate Planning Client",
+        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80"
+    },
+    {
+        text: "Nicholas is great to deal with. He is very knowledgeable, dealing with every request promptly and professionally. Truly caring about the end result for the client in every case. Highly recommend!",
+        name: "Matthew Kretschmer",
+        role: "Business Owner",
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80"
+    },
+    {
+        text: "Nicholas has been incredibly helpful to me as I launch a small business. He's helped me build my LLC and accompanying paperwork on solid legal footing and has stepped in several times as needed to assist with additional steps.",
+        name: "Laura Babka",
         role: "Small Business Owner",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDbLAmj_CeaX-35Imvj7RBBL29qh3qc0Lfk0Ug7TX_GCwtDlnDZm5EP-zXstrbimsNnvbW4t5kJq8Q9jXCYFR0Dw-yKE10jdvWe1PN44ljoIouU95_zDH2xU6j79SyLt4UDi883GIi2wKEWdm0ooTdlfbs9DMsuzjx9pg6tqXaxnYYb7b49XrFzOLGSSUqanfMmjnh7O302gdlYDsAVBUyUH-taU6e1kwv6xJHlyG9J5qkx7hzz_tHvi2tQGizUFBTmKfOH5p6YE2JK"
+        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80"
+    },
+    {
+        text: "Nick is exactly what you want in an attorney. He is always professional and gives clients all the time they need to understand the situation. His flat fee model worked great for me. Highly recommend.",
+        name: "Natalie Thomas",
+        role: "Client",
+        image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&q=80"
     }
 ];
 
@@ -141,7 +159,7 @@ const Testimonials = () => {
                                     ))}
                                 </div>
                             </div>
-                            <span className="text-[0.7rem] text-text-muted-light dark:text-text-muted-dark font-medium uppercase tracking-wider">Based on 150+ reviews</span>
+                            <span className="text-[0.7rem] text-text-muted-light dark:text-text-muted-dark font-medium uppercase tracking-wider">Based on 20 reviews on Google</span>
                         </div>
                     </a>
                 </motion.div>
