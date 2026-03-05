@@ -16,14 +16,14 @@ const ThankYou = () => {
     }, []);
 
     return (
-        <div className="relative min-h-screen bg-primary flex flex-col items-center pt-24 pb-16 px-4 overflow-hidden">
+        <div className="relative min-h-screen bg-primary flex flex-col items-center pt-8 pb-4 px-4 overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-primary/80 dark:bg-background-dark/90 z-10 transition-colors duration-300"></div>
                 <img
                     src={`${import.meta.env.BASE_URL}footer.jpg`}
                     alt="Abstract Architecture Background"
-                    className="w-full h-full object-cover grayscale opacity-30 mix-blend-overlay"
+                    className="w-full h-full object-cover grayscale opacity-60 mix-blend-overlay"
                 />
             </div>
 
