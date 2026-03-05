@@ -77,11 +77,11 @@ const ThankYou = () => {
                 <div className="flex flex-col items-center gap-4">
                     <p className="text-white/60">Prefer to speak right now? Call us directly:</p>
                     <a
-                        href="tel:2163508123"
+                        href="tel:+12163508123"
                         className="flex items-center gap-3 text-secondary text-2xl font-bold hover:text-yellow-400 transition-colors group"
                     >
                         <Phone size={24} className="group-hover:animate-bounce" />
-                        (216) 350-8123
+                        +1 216-350-8123
                     </a>
                 </div>
             </motion.div>
