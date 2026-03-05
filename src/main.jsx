@@ -7,9 +7,9 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <BrowserRouter basename="/CostarasLaw-LP">
+        <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App />} />
+                <Route path="/*" element={<App />} />
                 <Route path="/home-save" element={<HomeSave />} />
             </Routes>
         </BrowserRouter>

@@ -36,16 +36,13 @@ const Hero = () => {
 
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <motion.button
-                                whileHover={{ scale: 1.02 }}
-                                whileTap={{ scale: 0.98 }}
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
                                 onClick={() => setIsModalOpen(true)}
-                                className="group relative w-full sm:w-auto px-8 py-5 bg-white dark:bg-card-dark text-primary dark:text-white rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all overflow-hidden"
+                                className="w-full sm:w-auto px-10 py-4 bg-secondary text-white rounded-full font-semibold shadow-xl hover:bg-yellow-600 transition-all flex items-center justify-center gap-3"
                             >
-                                <span className="relative z-10 flex items-center justify-center gap-2">
-                                    <span className="material-symbols-outlined text-secondary">download</span>
-                                    <span>Get Your Free 10-Point Checklist</span>
-                                </span>
-                                <div className="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                <span className="material-symbols-outlined">download</span>
+                                <span>Get Your Free 10-Point Checklist</span>
                             </motion.button>
                         </div>
 

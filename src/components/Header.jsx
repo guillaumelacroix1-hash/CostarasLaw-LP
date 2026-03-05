@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldAlert } from 'lucide-react'; // Or any other shield icon, code.html used a material symbol
+import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ onOpenModal }) => {
     return (
         <motion.header
             initial={{ y: -100 }}
@@ -13,7 +14,7 @@ const Header = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
 
-                    <div className="flex-shrink-0 flex items-center gap-2 md:gap-3">
+                    <Link to="/" className="flex-shrink-0 flex items-center gap-2 md:gap-3 cursor-pointer">
                         <div className="h-8 w-8 md:h-11 md:w-11 flex items-center justify-center">
                             <img src="https://assets.cdn.filesafe.space/7ddkjb0m1qKwq9PPcv33/media/696fb4cd84438db17a0d2450.png" alt="Costaras Law Logo" className="w-full h-full object-contain" />
                         </div>
@@ -21,24 +22,24 @@ const Header = () => {
                             <span className="font-display font-bold text-xl md:text-2xl tracking-tight text-primary dark:text-white leading-none">Costaras Law</span>
                             <span className="hidden md:block text-[0.65rem] uppercase tracking-widest text-text-muted-light dark:text-text-muted-dark font-medium mt-1">Business & Estate Planning</span>
                         </div>
-                    </div>
+                    </Link>
 
                     <nav className="hidden md:flex space-x-8">
-                        <a className="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors" href="#problem">The Problem</a>
-                        <a className="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors" href="#authority">Meet the Founder</a>
-                        <a className="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors" href="#guide">Free Guide</a>
-                        <a className="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors" href="#faq">FAQ</a>
+                        <a className="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors" href="/#problem">The Problem</a>
+                        <a className="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors" href="/#authority">Meet the Founder</a>
+                        <a className="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors" href="/#guide">Free Guide</a>
+                        <a className="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors" href="/#faq">FAQ</a>
                     </nav>
 
                     <div className="flex items-center">
-                        <motion.a
+                        <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center justify-center px-4 py-2 md:px-6 md:py-2 border border-transparent text-xs md:text-sm font-medium rounded-lg text-white bg-primary hover:bg-opacity-90 transition shadow-sm cursor-pointer"
-                            href="#booking"
+                            onClick={onOpenModal}
+                            className="inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-semibold rounded-full text-white bg-secondary hover:bg-yellow-600 transition shadow-sm cursor-pointer"
                         >
-                            Book Consultation
-                        </motion.a>
+                            Get Free Guide
+                        </motion.button>
                     </div>
                 </div>
             </div>

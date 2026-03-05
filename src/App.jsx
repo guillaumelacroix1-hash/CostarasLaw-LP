@@ -1,32 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import TrustTicker from './components/TrustTicker';
-import RealityCheck from './components/RealityCheck';
-import AuthoritySection from './components/AuthoritySection';
-import GuideSection from './components/GuideSection';
-import ProcessTimeline from './components/ProcessTimeline';
-import BookingSection from './components/BookingSection';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
+import Home from './pages/Home';
+import ThankYou from './pages/ThankYou';
 import Footer from './components/Footer';
+import DownloadModal from './components/DownloadModal';
 
 function App() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const location = useLocation();
+
     return (
         <div className="min-h-screen bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark font-body transition-colors duration-300">
-            <Header />
-            <main>
-                <Hero />
-                <TrustTicker />
-                <RealityCheck />
-                <AuthoritySection />
-                <GuideSection />
-                <ProcessTimeline />
-                <BookingSection />
-                <Testimonials />
-                <FAQ />
-            </main>
-            <Footer />
+            {location.pathname !== '/thank-you' && <Header onOpenModal={() => setIsModalOpen(true)} />}
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/thank-you" element={<ThankYou />} />
+            </Routes>
+
+            {location.pathname !== '/thank-you' && <Footer />}
+
+            <DownloadModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+            />
         </div>
     );
 }
