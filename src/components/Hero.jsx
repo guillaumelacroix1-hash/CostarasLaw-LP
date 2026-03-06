@@ -78,7 +78,7 @@ const Hero = () => {
                                     initial={{ opacity: 0, scale: 0.8 }}
                                     animate={{ opacity: 1, scale: 1, x: mousePosition.x * 0.5, y: mousePosition.y * 0.5 }}
                                     transition={{ opacity: { duration: 0.5, delay: 0.8 }, scale: { duration: 0.5, delay: 0.8, type: "spring" }, x: { type: "spring", stiffness: 75, damping: 15 }, y: { type: "spring", stiffness: 75, damping: 15 } }}
-                                    className="absolute top-[5%] lg:top-[12%] -right-[2%] lg:-right-[10%] z-20 pointer-events-auto origin-right scale-[0.85] sm:scale-100"
+                                    className="absolute top-[5%] lg:top-[12%] right-[5%] lg:-right-[2%] z-20 pointer-events-auto origin-right scale-[0.85] sm:scale-100"
                                 >
                                     <motion.div
                                         animate={{ y: [0, -12, 0] }}
