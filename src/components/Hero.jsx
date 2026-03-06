@@ -34,6 +34,10 @@ const Hero = () => {
                             Don't let a generic LLC wipe out your legacy. Get the comprehensive 10-Point Asset Protection Checklist today.
                         </p>
 
+                        <p className="mt-4 text-sm text-text-muted-light/80 dark:text-text-muted-dark/80 max-w-2xl mx-auto lg:mx-0 font-medium">
+                            If you are looking for an asset protection lawyer in Ohio, this guide explains the strategies we use to protect business owners and real estate investors from lawsuits.
+                        </p>
+
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
@@ -42,7 +46,7 @@ const Hero = () => {
                                 className="w-full sm:w-auto px-10 py-4 bg-secondary text-white rounded-full font-semibold shadow-xl hover:bg-yellow-600 transition-all flex items-center justify-center gap-3"
                             >
                                 <span className="material-symbols-outlined">download</span>
-                                <span>Get Your Free 10-Point Checklist</span>
+                                <span>Download the Free Asset Protection Guide</span>
                             </motion.button>
                         </div>
 

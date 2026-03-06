@@ -16,9 +16,9 @@ const ThankYou = () => {
     }, []);
 
     return (
-        <div className="relative min-h-screen bg-primary flex flex-col items-center pt-8 pb-4 px-4 overflow-hidden">
+        <div className="relative min-h-screen bg-primary flex flex-col items-center pt-8 pb-4 px-4 overflow-x-hidden">
             {/* Background Image */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 pointer-events-none">
                 <div className="absolute inset-0 bg-primary/80 dark:bg-background-dark/90 z-10 transition-colors duration-300"></div>
                 <img
                     src={`${import.meta.env.BASE_URL}footer.jpg`}
@@ -59,7 +59,7 @@ const ThankYou = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="bg-white rounded-3xl p-6 md:p-10 shadow-2xl overflow-hidden mb-12"
+                    className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 md:p-10 shadow-2xl mb-12 w-full max-w-4xl mx-auto"
                 >
                     <div className="w-full min-h-[700px]">
                         <iframe

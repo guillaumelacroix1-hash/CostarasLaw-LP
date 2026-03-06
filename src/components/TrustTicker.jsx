@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 const TrustTicker = () => {
     const items = [
-        "★ 500+ Investors Protected",
-        "★ Ohio Expert",
-        "★ $100M+ Secured",
-        "★ 500+ Investors Protected",
-        "★ Ohio Expert",
-        "★ $100M+ Secured",
+        "★ Trusted by Ohio business owners for over 20 years",
+        "★ Thousands of clients protected",
+        "★ Ohio licensed attorneys",
+        "★ Trusted by Ohio business owners for over 20 years",
+        "★ Thousands of clients protected",
+        "★ Ohio licensed attorneys",
     ];
 
     return (
