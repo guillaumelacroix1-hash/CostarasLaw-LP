@@ -93,7 +93,7 @@ const ThankYou = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 md:p-10 shadow-2xl mb-12 w-full max-w-5xl mx-auto"
+                    className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 md:p-10 shadow-2xl mb-12 w-full max-w-7xl mx-auto"
                 >
                     <div className="w-full min-h-[700px]">
                         <iframe
