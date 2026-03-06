@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { X, ArrowRight } from 'lucide-react';
+import { X, ArrowRight, CheckCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const DownloadModal = ({ isOpen, onClose }) => {
@@ -79,6 +79,31 @@ const DownloadModal = ({ isOpen, onClose }) => {
                     <p className="text-sm sm:text-base text-text-muted-light dark:text-text-muted-dark mb-6 max-w-lg">
                         Enter your details below to receive the 10-point blueprint for securing your legacy and protecting your investments.
                     </p>
+
+                    {/* Target Audience Block */}
+                    <div className="bg-primary/5 dark:bg-primary/10 rounded-xl p-4 sm:p-5 mb-6 border border-primary/10">
+                        <h3 className="font-display text-lg font-semibold text-primary dark:text-white mb-3">
+                            This guide is for you if:
+                        </h3>
+                        <ul className="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark font-medium">
+                            <li className="flex items-start gap-2">
+                                <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
+                                <span>You own a business in Ohio</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
+                                <span>You have rental properties or real estate investments</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
+                                <span>You want to protect your assets from lawsuits</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
+                                <span>You want to structure your LLC correctly</span>
+                            </li>
+                        </ul>
+                    </div>
 
                     {/* Iframe Container */}
                     <div className="flex-grow relative w-full h-[450px] sm:h-[500px]">
