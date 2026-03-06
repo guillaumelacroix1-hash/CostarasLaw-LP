@@ -34,10 +34,12 @@ const RealityCheck = () => {
                         transition={{ duration: 0.5, delay: 0 }}
                         className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group"
                     >
-                        <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                            <span className="material-symbols-outlined text-secondary text-2xl">warning</span>
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <span className="material-symbols-outlined text-secondary text-2xl">warning</span>
+                            </div>
+                            <h3 className="font-display text-2xl font-semibold text-primary dark:text-white">The DIY Trap</h3>
                         </div>
-                        <h3 className="font-display text-2xl font-semibold text-primary dark:text-white mb-3">The DIY Trap</h3>
                         <p className="text-text-muted-light dark:text-text-muted-dark leading-relaxed">
                             Online filings often miss critical operating agreement clauses that courts look for to pierce the corporate veil.
                         </p>
@@ -53,10 +55,12 @@ const RealityCheck = () => {
                         className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group relative overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-full -mr-4 -mt-4"></div>
-                        <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                            <span className="material-symbols-outlined text-secondary text-2xl">shield</span>
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <span className="material-symbols-outlined text-secondary text-2xl">shield</span>
+                            </div>
+                            <h3 className="font-display text-xl sm:text-2xl font-semibold text-primary dark:text-white leading-tight">Inside vs. Outside Liability</h3>
                         </div>
-                        <h3 className="font-display text-2xl font-semibold text-primary dark:text-white mb-3">Inside vs. Outside Liability</h3>
                         <p className="text-text-muted-light dark:text-text-muted-dark leading-relaxed">
                             Learn the difference between a lawsuit against the property and a lawsuit against you personally.
                         </p>
@@ -71,10 +75,12 @@ const RealityCheck = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group"
                     >
-                        <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                            <span className="material-symbols-outlined text-secondary text-2xl">person_off</span>
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <span className="material-symbols-outlined text-secondary text-2xl">person_off</span>
+                            </div>
+                            <h3 className="font-display text-2xl font-semibold text-primary dark:text-white">Piercing the Veil</h3>
                         </div>
-                        <h3 className="font-display text-2xl font-semibold text-primary dark:text-white mb-3">Piercing the Veil</h3>
                         <p className="text-text-muted-light dark:text-text-muted-dark leading-relaxed">
                             Single-member LLCs face higher scrutiny. Discover the "charging order" protection you might be missing.
                         </p>

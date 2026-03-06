@@ -18,7 +18,7 @@ const Footer = () => {
 
                 {/* Logo and Name */}
                 <Link to="/" className="flex flex-col items-center justify-center mb-10 cursor-pointer group">
-                    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Costaras Law Shield" className="h-16 w-auto mb-6 object-contain drop-shadow-lg group-hover:scale-105 transition-transform" />
+                    <img src="https://assets.cdn.filesafe.space/7ddkjb0m1qKwq9PPcv33/media/696fb4cd84438db17a0d2450.png" alt="Costaras Law Shield" className="h-16 w-auto mb-6 object-contain drop-shadow-lg group-hover:scale-105 transition-transform" />
                     <span className="font-display font-bold text-3xl text-white tracking-wide group-hover:text-secondary transition-colors">Costaras Law</span>
                     <div className="h-1 w-12 bg-secondary mt-6 rounded-full"></div>
                 </Link>
