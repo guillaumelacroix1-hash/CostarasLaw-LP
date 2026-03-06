@@ -45,7 +45,7 @@ const DownloadModal = ({ isOpen, onClose }) => {
 
     return (
         <div
-            className={`fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 lg:p-8 transition-all duration-500 ease-in-out ${isOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none delay-200'}`}
+            className={`fixed inset-0 flex items-center justify-center p-4 sm:p-6 lg:p-8 transition-all duration-500 ease-in-out ${isOpen ? 'z-[100] opacity-100 visible pointer-events-auto' : '-z-50 opacity-0 invisible pointer-events-none delay-200'}`}
         >
             {/* Backdrop */}
             <div
