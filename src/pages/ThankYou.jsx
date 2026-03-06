@@ -50,9 +50,43 @@ const ThankYou = () => {
                     <span className="serif-italic text-secondary font-light">is on its way to your inbox.</span>
                 </h1>
 
-                <p className="text-xl text-white/70 max-w-2xl mx-auto font-light mb-12">
+                <p className="text-xl text-white/70 max-w-2xl mx-auto font-light mb-8">
                     Don't leave your real estate portfolio exposed for another day. Secure your assets now by booking a Free 20-Minute Structural Review Call with our legal team.
                 </p>
+
+                {/* Topics List */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="max-w-2xl mx-auto mb-16 text-left bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-8"
+                >
+                    <h3 className="text-xl font-medium text-white mb-6">
+                        You can ask questions about:
+                    </h3>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+                        <li className="flex items-start gap-3">
+                            <span className="material-symbols-outlined text-secondary text-xl shrink-0">check_circle</span>
+                            <span className="text-white/80">LLC formation and structuring</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="material-symbols-outlined text-secondary text-xl shrink-0">check_circle</span>
+                            <span className="text-white/80">Operating agreements and partnerships</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="material-symbols-outlined text-secondary text-xl shrink-0">check_circle</span>
+                            <span className="text-white/80">Real estate transactions</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="material-symbols-outlined text-secondary text-xl shrink-0">check_circle</span>
+                            <span className="text-white/80">Asset protection considerations</span>
+                        </li>
+                        <li className="flex items-start gap-3 sm:col-span-2">
+                            <span className="material-symbols-outlined text-secondary text-xl shrink-0">check_circle</span>
+                            <span className="text-white/80">General legal direction</span>
+                        </li>
+                    </ul>
+                </motion.div>
 
                 {/* The Booking Section */}
                 <motion.div
@@ -73,17 +107,6 @@ const ThankYou = () => {
                     </div>
                 </motion.div>
 
-                {/* Secondary Contact Option */}
-                <div className="flex flex-col items-center gap-4">
-                    <p className="text-white/60">Prefer to speak right now? Call us directly:</p>
-                    <a
-                        href="tel:+12163508123"
-                        className="flex items-center gap-3 text-secondary text-2xl font-bold hover:text-yellow-400 transition-colors group"
-                    >
-                        <Phone size={24} className="group-hover:animate-bounce" />
-                        +1 216-350-8123
-                    </a>
-                </div>
             </motion.div>
         </div>
     );
