@@ -24,7 +24,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-center lg:text-left z-20"
+                        className="text-center lg:text-left relative z-30"
                     >
                         <h1 className="font-display text-4xl lg:text-6xl font-medium tracking-tight text-primary dark:text-white mb-6 leading-tight">
                             Real Estate Investors: <br />
