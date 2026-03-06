@@ -107,7 +107,7 @@ const GuideSection = () => {
                             <ul className="space-y-4 text-sm text-text-muted-light dark:text-text-muted-dark font-medium">
                                 <li className="flex items-start gap-3">
                                     <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
-                                    <span>You operate a business in Ohio</span>
+                                    <span>You operate in Ohio</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />

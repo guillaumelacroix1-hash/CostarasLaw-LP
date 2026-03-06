@@ -59,7 +59,7 @@ const RealityCheck = () => {
                             <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
                                 <span className="material-symbols-outlined text-secondary text-2xl">shield</span>
                             </div>
-                            <h3 className="font-display text-xl sm:text-2xl font-semibold text-primary dark:text-white leading-tight">Inside vs. Outside Liability</h3>
+                            <h3 className="font-display text-xl sm:text-2xl font-semibold text-primary dark:text-white leading-tight">Reducing Your Liability</h3>
                         </div>
                         <p className="text-text-muted-light dark:text-text-muted-dark leading-relaxed">
                             Learn the difference between a lawsuit against the property and a lawsuit against you personally.
@@ -79,7 +79,7 @@ const RealityCheck = () => {
                             <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
                                 <span className="material-symbols-outlined text-secondary text-2xl">person_off</span>
                             </div>
-                            <h3 className="font-display text-2xl font-semibold text-primary dark:text-white">Piercing the Veil</h3>
+                            <h3 className="font-display text-2xl font-semibold text-primary dark:text-white">Piercing The Veil</h3>
                         </div>
                         <p className="text-text-muted-light dark:text-text-muted-dark leading-relaxed">
                             Single-member LLCs face higher scrutiny. Discover the "charging order" protection you might be missing.
