@@ -51,7 +51,7 @@ const InlineLeadForm = () => {
                     onClick={() => setShowForm(true)}
                     className="whitespace-nowrap py-3 px-6 border border-transparent rounded-lg shadow-md text-base font-semibold text-white bg-secondary hover:bg-yellow-600 transition-colors"
                 >
-                    Download the Free Asset Protection Guide
+                    Download Free Guide
                 </motion.button>
                 <motion.a
                     whileHover={{ scale: 1.05 }}
@@ -89,7 +89,7 @@ const InlineLeadForm = () => {
                 type="submit"
                 disabled={status === 'loading' || status === 'success'}
             >
-                {status === 'idle' && 'Download the Free Asset Protection Guide'}
+                {status === 'idle' && 'Download Free Guide'}
                 {status === 'loading' && 'Loading...'}
                 {status === 'success' && 'Downloading...'}
             </motion.button>

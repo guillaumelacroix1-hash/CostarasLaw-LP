@@ -77,7 +77,7 @@ const GuideSection = () => {
                                 className="whitespace-nowrap py-4 px-10 border border-transparent rounded-full shadow-lg font-semibold text-white bg-secondary hover:bg-yellow-600 focus:outline-none transition-all flex items-center gap-3"
                             >
                                 <span className="material-symbols-outlined">download</span>
-                                Download the Free Asset Protection Guide
+                                Download Free Guide
                             </motion.button>
                         </div>
                     </motion.div>

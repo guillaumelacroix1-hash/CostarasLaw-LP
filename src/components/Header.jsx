@@ -38,7 +38,7 @@ const Header = ({ onOpenModal }) => {
                             onClick={onOpenModal}
                             className="inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-semibold rounded-full text-white bg-secondary hover:bg-yellow-600 transition shadow-sm cursor-pointer"
                         >
-                            Get Free Guide
+                            Download Free Guide
                         </motion.button>
                     </div>
                 </div>
