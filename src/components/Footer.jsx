@@ -28,18 +28,12 @@ const Footer = () => {
                 </p>
 
                 {/* CTAs */}
-                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <a
-                        href="/thank-you"
-                        className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-lg text-primary bg-secondary hover:bg-yellow-600 hover:text-white transition-all shadow-lg transform hover:-translate-y-1"
-                    >
-                        Book Consultation
-                    </a>
+                <div className="flex justify-center items-center">
                     <a
                         href="/#guide"
-                        className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/20 text-base font-semibold rounded-lg text-white bg-transparent hover:bg-white/10 transition-all backdrop-blur-sm transform hover:-translate-y-1"
+                        className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-lg text-primary bg-secondary hover:bg-yellow-600 hover:text-white transition-all shadow-lg transform hover:-translate-y-1"
                     >
-                        Get Free Guide
+                        Download Free Guide
                     </a>
                 </div>
 
