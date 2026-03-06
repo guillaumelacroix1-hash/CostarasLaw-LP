@@ -51,11 +51,14 @@
       margin-right: -48px;
       width: calc(100% + 96px);
     }
+
+    .form-firepower-wrapper iframe {
+      margin-top: -10px;
+      margin-bottom: -15px;
+    }
   }
 
   .form-firepower-wrapper iframe {
-    margin-top: -10px;
-    margin-bottom: -15px;
     width: 100% !important;
   }
 }
