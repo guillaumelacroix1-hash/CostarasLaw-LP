@@ -89,9 +89,9 @@ const GuideSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="relative flex flex-col items-center lg:items-start"
+                        className="relative flex flex-col items-center w-full"
                     >
-                        <div className="relative w-full max-w-[300px] lg:ml-[50px] pointer-events-none">
+                        <div className="relative w-full max-w-[320px] pointer-events-none">
                             <img
                                 src="https://assets.cdn.filesafe.space/7ddkjb0m1qKwq9PPcv33/media/6998907908245e0752062524.png"
                                 alt="10-Point Asset Protection Checklist Guide"
@@ -100,8 +100,8 @@ const GuideSection = () => {
                         </div>
 
                         {/* Target Audience Block */}
-                        <div className="w-full max-w-[320px] lg:ml-[40px] mt-8 bg-white dark:bg-card-dark rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-xl">
-                            <h3 className="font-display text-xl font-semibold text-primary dark:text-white mb-4">
+                        <div className="w-full mt-8 bg-gray-50 dark:bg-card-dark rounded-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-800 shadow-xl">
+                            <h3 className="font-display text-xl sm:text-2xl font-semibold text-primary dark:text-white mb-5 text-center sm:text-left">
                                 This guide is for you if:
                             </h3>
                             <ul className="space-y-4 text-sm text-text-muted-light dark:text-text-muted-dark font-medium">
