@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { CheckCircle } from 'lucide-react';
 import DownloadModal from './DownloadModal';
 
 const GuideSection = () => {
@@ -82,20 +83,45 @@ const GuideSection = () => {
                         </div>
                     </motion.div>
 
-                    {/* Right: Book Image */}
+                    {/* Right: Book Image & Target Audience */}
                     <motion.div
                         initial={{ opacity: 0, x: 40 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="relative flex justify-center lg:justify-start pointer-events-none"
+                        className="relative flex flex-col items-center lg:items-start"
                     >
-                        <div className="relative w-full max-w-[300px] lg:ml-[50px]">
+                        <div className="relative w-full max-w-[300px] lg:ml-[50px] pointer-events-none">
                             <img
                                 src="https://assets.cdn.filesafe.space/7ddkjb0m1qKwq9PPcv33/media/6998907908245e0752062524.png"
                                 alt="10-Point Asset Protection Checklist Guide"
                                 className="relative w-full h-auto object-contain transform rotate-1 hover:rotate-0 transition-transform duration-500"
                             />
+                        </div>
+
+                        {/* Target Audience Block */}
+                        <div className="w-full max-w-[320px] lg:ml-[40px] mt-8 bg-white dark:bg-card-dark rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-xl">
+                            <h3 className="font-display text-xl font-semibold text-primary dark:text-white mb-4">
+                                This guide is for you if:
+                            </h3>
+                            <ul className="space-y-4 text-sm text-text-muted-light dark:text-text-muted-dark font-medium">
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
+                                    <span>You own a business in Ohio</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
+                                    <span>You have rental properties or real estate investments</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
+                                    <span>You want to protect your assets from lawsuits</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
+                                    <span>You want to structure your LLC correctly</span>
+                                </li>
+                            </ul>
                         </div>
                     </motion.div>
 

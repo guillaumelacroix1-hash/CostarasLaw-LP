@@ -138,30 +138,7 @@ const DownloadModal = ({ isOpen, onClose }) => {
                         <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[90%] h-4 bg-black/10 blur-xl rounded-full"></div>
                     </div>
 
-                    {/* Target Audience Block - Moved below book */}
-                    <div className="w-full max-w-[320px] mt-12 bg-white/50 dark:bg-black/20 rounded-xl p-5 border border-primary/5 dark:border-white/5 shadow-sm">
-                        <h3 className="font-display text-lg font-semibold text-primary dark:text-white mb-3 text-center">
-                            This guide is for you if:
-                        </h3>
-                        <ul className="space-y-3 text-sm text-text-muted-light dark:text-text-muted-dark font-medium">
-                            <li className="flex items-start gap-2">
-                                <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
-                                <span>You own a business in Ohio</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                                <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
-                                <span>You have rental properties or real estate investments</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                                <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
-                                <span>You want to protect your assets from lawsuits</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                                <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
-                                <span>You want to structure your LLC correctly</span>
-                            </li>
-                        </ul>
-                    </div>
+
 
                 </div>
             </motion.div>
