@@ -114,7 +114,7 @@ const DownloadModal = ({ isOpen, onClose }) => {
                 </div>
 
                 {/* Right: Book Visual Area (Hidden on small screens, fixed non-scrolling) */}
-                <div className="hidden md:flex md:w-[40%] lg:w-[45%] bg-gray-50 dark:bg-surface-dark items-center justify-center p-8 lg:p-12 border-l border-gray-100 dark:border-gray-800">
+                <div className="hidden md:flex flex-col md:w-[40%] lg:w-[45%] bg-gray-50 dark:bg-surface-dark items-center justify-center p-8 lg:p-12 border-l border-gray-100 dark:border-gray-800">
                     <div className="relative group w-full max-w-[320px]">
                         <motion.div
                             animate={{
