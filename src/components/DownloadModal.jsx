@@ -45,7 +45,7 @@ const DownloadModal = ({ isOpen, onClose }) => {
 
     return (
         <div
-            className={`fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 lg:p-8 transition-all duration-500 ease-in-out ${isOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none delay-200'}`}
+            className={`fixed inset-0 z-[100] flex items-center justify-center p-2 sm:p-6 lg:p-8 transition-all duration-500 ease-in-out ${isOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none delay-200'}`}
         >
             {/* Backdrop */}
             <div
@@ -72,7 +72,7 @@ const DownloadModal = ({ isOpen, onClose }) => {
                 </button>
 
                 {/* Left: Form Area (Scrollable to prevent modal stretching) */}
-                <div className="flex-1 p-6 sm:p-8 md:p-12 flex flex-col overflow-y-auto w-full no-scrollbar">
+                <div className="flex-1 p-3 sm:p-6 md:p-12 flex flex-col overflow-y-auto w-full no-scrollbar">
                     <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-medium text-primary dark:text-white mb-3">
                         Get Your Free <span className="serif-italic text-secondary">Asset Protection Checklist</span>
                     </h2>

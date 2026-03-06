@@ -37,7 +37,7 @@ const GuideSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6 }}
-                        className="space-y-10"
+                        className="space-y-10 relative z-20"
                     >
                         <div>
                             <h2 className="font-display text-4xl lg:text-5xl font-medium text-primary dark:text-white mb-6">
@@ -88,7 +88,7 @@ const GuideSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="relative flex justify-center lg:justify-start"
+                        className="relative flex justify-center lg:justify-start pointer-events-none"
                     >
                         <div className="relative w-full max-w-[300px] lg:ml-[50px]">
                             <img
