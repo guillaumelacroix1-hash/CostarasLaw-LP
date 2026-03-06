@@ -107,7 +107,7 @@ const GuideSection = () => {
                             <ul className="space-y-4 text-sm text-text-muted-light dark:text-text-muted-dark font-medium">
                                 <li className="flex items-start gap-3">
                                     <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
-                                    <span>You own a business in Ohio</span>
+                                    <span>You operate a business in Ohio</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
@@ -116,10 +116,6 @@ const GuideSection = () => {
                                 <li className="flex items-start gap-3">
                                     <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
                                     <span>You want to protect your assets from lawsuits</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
-                                    <span>You want to structure your LLC correctly</span>
                                 </li>
                             </ul>
                         </div>
