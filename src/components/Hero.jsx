@@ -40,7 +40,7 @@ const Hero = () => {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => setIsModalOpen(true)}
-                                className="w-full sm:w-auto px-10 py-4 bg-secondary text-white rounded-full font-semibold shadow-xl hover:bg-yellow-600 transition-all flex items-center justify-center gap-3"
+                                className="w-full sm:w-auto px-10 py-4 bg-secondary text-white rounded-full font-semibold shadow-xl hover:bg-yellow-600 transition-all flex items-center justify-center gap-3 select-none touch-manipulation relative z-50 cursor-pointer"
                             >
                                 <span className="material-symbols-outlined">download</span>
                                 <span>Download Free Guide</span>

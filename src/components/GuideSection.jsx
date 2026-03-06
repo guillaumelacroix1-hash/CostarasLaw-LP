@@ -74,7 +74,7 @@ const GuideSection = () => {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => setIsModalOpen(true)}
-                                className="whitespace-nowrap py-4 px-10 border border-transparent rounded-full shadow-lg font-semibold text-white bg-secondary hover:bg-yellow-600 focus:outline-none transition-all flex items-center gap-3 w-full sm:w-auto justify-center"
+                                className="whitespace-nowrap py-4 px-10 border border-transparent rounded-full shadow-lg font-semibold text-white bg-secondary hover:bg-yellow-600 focus:outline-none transition-all flex items-center gap-3 w-full sm:w-auto justify-center select-none touch-manipulation relative z-50 cursor-pointer"
                             >
                                 <span className="material-symbols-outlined">download</span>
                                 Download Free Guide
