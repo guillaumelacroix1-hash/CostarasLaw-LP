@@ -36,9 +36,10 @@ const Header = ({ onOpenModal }) => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={onOpenModal}
-                            className="inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-semibold rounded-full text-white bg-secondary hover:bg-yellow-600 transition shadow-sm cursor-pointer"
+                            className="inline-flex items-center justify-center px-4 md:px-6 py-2 border border-transparent text-xs md:text-sm font-semibold rounded-full text-white bg-secondary hover:bg-yellow-600 transition shadow-sm cursor-pointer whitespace-nowrap"
                         >
-                            Download Free Guide
+                            <span className="md:hidden">Free Guide</span>
+                            <span className="hidden md:inline">Download Free Guide</span>
                         </motion.button>
                     </div>
                 </div>

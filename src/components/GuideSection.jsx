@@ -69,12 +69,12 @@ const GuideSection = () => {
                             ))}
                         </div>
 
-                        <div className="pt-4 min-h-[60px] flex items-center">
+                        <div className="pt-4 min-h-[60px] flex items-center relative z-10">
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => setIsModalOpen(true)}
-                                className="whitespace-nowrap py-4 px-10 border border-transparent rounded-full shadow-lg font-semibold text-white bg-secondary hover:bg-yellow-600 focus:outline-none transition-all flex items-center gap-3"
+                                className="whitespace-nowrap py-4 px-10 border border-transparent rounded-full shadow-lg font-semibold text-white bg-secondary hover:bg-yellow-600 focus:outline-none transition-all flex items-center gap-3 w-full sm:w-auto justify-center"
                             >
                                 <span className="material-symbols-outlined">download</span>
                                 Download Free Guide
