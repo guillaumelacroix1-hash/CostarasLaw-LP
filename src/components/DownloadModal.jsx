@@ -82,7 +82,7 @@ const DownloadModal = ({ isOpen, onClose }) => {
 
 
                     {/* Iframe Container */}
-                    <div className="flex-grow relative w-full h-[450px] sm:h-[500px]">
+                    <div className="flex-grow relative w-full h-[450px] sm:h-[500px] form-firepower-wrapper">
                         <iframe
                             src="https://link.marketingfirepower.app/widget/form/Rdcs5tu1rttGjH00JOtQ"
                             style={{ width: '100%', height: '100%', border: 'none', borderRadius: '8px' }}
