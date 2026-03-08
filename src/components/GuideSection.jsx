@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
-import DownloadModal from './DownloadModal';
 
-const GuideSection = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+const GuideSection = ({ onOpenModal }) => {
     const features = [
         {
             title: "Tie-Breakers",
@@ -74,7 +71,7 @@ const GuideSection = () => {
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                onClick={() => setIsModalOpen(true)}
+                                onClick={onOpenModal}
                                 className="whitespace-nowrap py-4 px-10 border border-transparent rounded-full shadow-lg font-semibold text-white bg-secondary hover:bg-yellow-600 focus:outline-none transition-all flex items-center gap-3 w-full sm:w-auto justify-center select-none touch-manipulation relative z-50 cursor-pointer"
                             >
                                 <span className="material-symbols-outlined">download</span>
@@ -138,10 +135,6 @@ const GuideSection = () => {
                 </div>
             </div>
 
-            <DownloadModal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-            />
         </section>
     );
 };

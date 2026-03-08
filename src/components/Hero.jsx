@@ -1,10 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import DownloadModal from './DownloadModal';
 import InlineLeadForm from './InlineLeadForm';
 
-const Hero = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+const Hero = ({ onOpenModal }) => {
     const videoRef = useRef(null);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -39,7 +36,7 @@ const Hero = () => {
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                onClick={() => setIsModalOpen(true)}
+                                onClick={onOpenModal}
                                 className="w-full sm:w-auto px-10 py-4 bg-secondary text-white rounded-full font-semibold shadow-xl hover:bg-yellow-600 transition-all flex items-center justify-center gap-3 select-none touch-manipulation relative z-50 cursor-pointer"
                             >
                                 <span className="material-symbols-outlined">download</span>
@@ -187,10 +184,6 @@ const Hero = () => {
                 />
             </div>
 
-            <DownloadModal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-            />
         </section>
     );
 };

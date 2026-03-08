@@ -15,7 +15,7 @@ function App() {
             {location.pathname !== '/thank-you' && <Header onOpenModal={() => setIsModalOpen(true)} />}
 
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Home onOpenModal={() => setIsModalOpen(true)} />} />
                 <Route path="/thank-you" element={<ThankYou />} />
             </Routes>
 

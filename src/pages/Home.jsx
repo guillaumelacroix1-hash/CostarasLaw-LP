@@ -9,14 +9,14 @@ import BookingSection from '../components/BookingSection';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 
-const Home = () => {
+const Home = ({ onOpenModal }) => {
     return (
         <main>
-            <Hero />
+            <Hero onOpenModal={onOpenModal} />
             <TrustTicker />
             <RealityCheck />
             <AuthoritySection />
-            <GuideSection />
+            <GuideSection onOpenModal={onOpenModal} />
             <ProcessTimeline />
             <BookingSection />
             <Testimonials />
