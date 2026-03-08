@@ -61,7 +61,7 @@ const DownloadModal = ({ isOpen, onClose }) => {
                     y: isOpen ? 0 : 20
                 }}
                 transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                className="relative w-full max-w-5xl bg-white dark:bg-card-dark rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[95vh] lg:max-h-[90vh]"
+                className="relative w-full max-w-4xl bg-white dark:bg-card-dark rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[95vh] lg:max-h-[90vh]"
             >
                 {/* Close Button */}
                 <button
@@ -82,7 +82,7 @@ const DownloadModal = ({ isOpen, onClose }) => {
 
 
                     {/* Iframe Container */}
-                    <div className="flex-grow relative w-full h-[450px] sm:h-[500px] form-firepower-wrapper">
+                    <div className="flex-grow relative w-full h-[550px] sm:h-[600px] form-firepower-wrapper">
                         <iframe
                             src="https://link.marketingfirepower.app/widget/form/Rdcs5tu1rttGjH00JOtQ"
                             style={{ width: '100%', height: '100%', border: 'none', borderRadius: '8px' }}
@@ -95,21 +95,11 @@ const DownloadModal = ({ isOpen, onClose }) => {
                             data-deactivation-type="neverDeactivate"
                             data-deactivation-value=""
                             data-form-name="LLC Lead Magnet - Guillaume"
-                            data-height="auto" // Let the script adjust its internal height, but our container will scroll if necessary
+                            data-height="auto"
                             data-layout-iframe-id="inline-Rdcs5tu1rttGjH00JOtQ"
                             data-form-id="Rdcs5tu1rttGjH00JOtQ"
                             title="LLC Lead Magnet - Guillaume"
                         ></iframe>
-                    </div>
-
-                    {/* Demo/Bypass Button for User Testing */}
-                    <div className="mt-4 flex justify-end">
-                        <button
-                            onClick={() => { onClose(); navigate('/thank-you'); }}
-                            className="text-xs sm:text-sm text-gray-400 hover:text-secondary flex items-center gap-1 transition-colors italic"
-                        >
-                            Simulation: Continue to Booking <ArrowRight size={14} />
-                        </button>
                     </div>
                 </div>
 

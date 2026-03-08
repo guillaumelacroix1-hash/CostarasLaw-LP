@@ -99,25 +99,39 @@ const GuideSection = () => {
                             />
                         </div>
 
-                        {/* Target Audience Block */}
-                        <div className="w-full mt-8 bg-gray-50 dark:bg-card-dark rounded-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-800 shadow-xl">
-                            <h3 className="font-display text-xl sm:text-2xl font-semibold text-primary dark:text-white mb-5 text-center sm:text-left">
+                        {/* Target Audience Block - Marquee */}
+                        <div className="w-full mt-10 overflow-hidden relative">
+                            <h3 className="font-display text-xl sm:text-2xl font-medium text-primary dark:text-white mb-6 text-center">
                                 This guide is for you if:
                             </h3>
-                            <ul className="space-y-4 text-sm text-text-muted-light dark:text-text-muted-dark font-medium">
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
-                                    <span>You operate in Ohio</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
-                                    <span>You have rental properties or real estate investments</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle size={20} className="text-secondary shrink-0 mt-0.5" />
-                                    <span>You want to protect your assets from lawsuits</span>
-                                </li>
-                            </ul>
+
+                            {/* Gradient fade edges */}
+                            <div className="absolute left-0 bottom-0 top-[60px] w-8 bg-gradient-to-r from-white dark:from-background-dark to-transparent z-10 pointer-events-none"></div>
+                            <div className="absolute right-0 bottom-0 top-[60px] w-8 bg-gradient-to-l from-white dark:from-background-dark to-transparent z-10 pointer-events-none"></div>
+
+                            <div className="flex">
+                                <motion.div
+                                    animate={{ x: ["0%", "-50%"] }}
+                                    transition={{ ease: "linear", duration: 15, repeat: Infinity }}
+                                    className="flex gap-4 items-stretch whitespace-nowrap px-4"
+                                >
+                                    {[
+                                        { text: "You operate in Ohio", id: 1 },
+                                        { text: "You have rental properties or real estate investments", id: 2 },
+                                        { text: "You want to protect your assets from lawsuits", id: 3 },
+                                        { text: "You operate in Ohio", id: 4 },
+                                        { text: "You have rental properties or real estate investments", id: 5 },
+                                        { text: "You want to protect your assets from lawsuits", id: 6 }
+                                    ].map((item) => (
+                                        <div key={item.id} className="flex flex-col items-center justify-center p-5 bg-gray-50 dark:bg-card-dark rounded-xl border border-gray-100 dark:border-gray-800 min-w-[200px] hover:shadow-md transition-shadow">
+                                            <CheckCircle size={32} className="text-secondary mb-3" />
+                                            <span className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark text-center whitespace-normal leading-tight">
+                                                {item.text}
+                                            </span>
+                                        </div>
+                                    ))}
+                                </motion.div>
+                            </div>
                         </div>
                     </motion.div>
 

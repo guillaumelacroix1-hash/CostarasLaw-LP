@@ -42,6 +42,7 @@ const testimonials = [
 
 const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
 
     const nextTestimonial = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -52,11 +53,12 @@ const Testimonials = () => {
     };
 
     useEffect(() => {
+        if (isPaused) return;
         const timer = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-        }, 5000);
+        }, 12000);
         return () => clearInterval(timer);
-    }, []);
+    }, [isPaused]);
 
     return (
         <section id="testimonials" className="relative py-24 bg-background-light dark:bg-surface-dark transition-colors duration-300 overflow-hidden">
@@ -72,7 +74,12 @@ const Testimonials = () => {
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-center font-display text-4xl lg:text-5xl font-medium text-primary dark:text-white mb-16">Client Success Stories</h2>
 
-                <div className="relative max-w-4xl mx-auto">
+                <div
+                    className="relative max-w-4xl mx-auto"
+                    onMouseEnter={() => setIsPaused(true)}
+                    onMouseLeave={() => setIsPaused(false)}
+                    onClick={() => setIsPaused(true)}
+                >
                     {/* Carousel Buttons */}
                     <div className="absolute top-1/2 -translate-y-1/2 -left-4 md:-left-12 z-10">
                         <button

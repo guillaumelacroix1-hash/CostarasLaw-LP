@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="relative bg-surface-light dark:bg-black py-24 border-t border-gray-200 dark:border-gray-800 overflow-hidden">
+        <footer className="relative bg-primary py-24 border-t border-gray-200 dark:border-gray-800 overflow-hidden">
             {/* Background Image */}
-            <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-primary/70 dark:bg-background-dark/80 z-10 transition-colors duration-300"></div>
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <div className="absolute inset-0 bg-primary/80 dark:bg-background-dark/90 z-10 transition-colors duration-300"></div>
                 <img
                     src={`${import.meta.env.BASE_URL}footer.jpg`}
                     alt="Abstract Architecture Background"
-                    className="w-full h-full object-cover grayscale opacity-40 mix-blend-overlay"
+                    className="w-full h-full object-cover grayscale opacity-60 mix-blend-overlay"
                 />
             </div>
 
@@ -31,17 +31,18 @@ const Footer = () => {
                 <div className="flex justify-center items-center">
                     <a
                         href="/#guide"
-                        className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-lg text-primary bg-secondary hover:bg-yellow-600 hover:text-white transition-all shadow-lg transform hover:-translate-y-1"
+                        className="inline-flex px-10 py-4 bg-secondary text-white rounded-full font-semibold shadow-xl hover:bg-yellow-600 transition-all items-center justify-center gap-3 select-none touch-manipulation relative z-50 cursor-pointer"
                     >
-                        Download Free Guide
+                        <span className="material-symbols-outlined">download</span>
+                        <span>Download Free Guide</span>
                     </a>
                 </div>
 
                 <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                     <p>© {new Date().getFullYear()} Costaras Law. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a className="hover:text-white transition-colors" href="#">Privacy Policy</a>
-                        <a className="hover:text-white transition-colors" href="#">Terms of Service</a>
+                        <a className="hover:text-white transition-colors" href="https://costaraslaw.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                        <a className="hover:text-white transition-colors" href="https://costaraslaw.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
                     </div>
                 </div>
             </div>
