@@ -5,6 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
 
@@ -38,11 +39,22 @@
     box-shadow: 25px 25px 50px -12px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
   }
 
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .form-firepower-wrapper {
     overflow: hidden;
     margin-left: -24px;
     margin-right: -24px;
     width: calc(100% + 48px);
+  }
+
+  .form-firepower-wrapper iframe {
+    width: 100% !important;
+    margin-top: -30px;
+    margin-bottom: -40px;
   }
 
   @media (min-width: 768px) {
@@ -56,9 +68,5 @@
       margin-top: -10px;
       margin-bottom: -15px;
     }
-  }
-
-  .form-firepower-wrapper iframe {
-    width: 100% !important;
   }
 }
