@@ -13,24 +13,21 @@ const TrustTicker = () => {
             <div className="flex w-full">
                 {/* Infinite Scroll Container */}
                 <motion.div
-                    className="flex whitespace-nowrap"
+                    className="flex whitespace-nowrap items-center gap-12"
                     animate={{ x: ["0%", "-50%"] }}
                     transition={{
                         repeat: Infinity,
                         ease: "linear",
-                        duration: 20
+                        duration: 30
                     }}
                 >
                     {[...items, ...items, ...items, ...items].map((item, index) => (
-                        <div
-                            key={index}
-                            className="px-8 flex items-center gap-8 opacity-80 hover:opacity-100 transition-opacity"
-                        >
+                        <React.Fragment key={index}>
                             <span className="text-xl font-bold font-display text-primary dark:text-white tracking-wider">
                                 {item}
                             </span>
                             <span className="material-symbols-outlined text-primary dark:text-white text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                        </div>
+                        </React.Fragment>
                     ))}
                 </motion.div>
             </div>

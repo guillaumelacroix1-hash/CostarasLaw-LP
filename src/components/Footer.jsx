@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="bg-secondary py-4 overflow-hidden relative z-30 shadow-lg">
                 <div className="flex w-full">
                     <motion.div
-                        className="flex whitespace-nowrap gap-16"
+                        className="flex whitespace-nowrap items-center gap-12"
                         animate={{ x: ["0%", "-50%"] }}
                         transition={{
                             repeat: Infinity,
@@ -24,13 +24,13 @@ const Footer = () => {
                             duration: 30
                         }}
                     >
-                        {[...tickerItems, ...tickerItems, ...tickerItems].map((item, index) => (
-                            <div key={index} className="flex items-center gap-12">
+                        {[...tickerItems, ...tickerItems, ...tickerItems, ...tickerItems].map((item, index) => (
+                            <React.Fragment key={index}>
                                 <span className="font-display font-extrabold text-white uppercase tracking-widest text-sm">
                                     {item}
                                 </span>
                                 <span className="material-symbols-outlined text-white text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                            </div>
+                            </React.Fragment>
                         ))}
                     </motion.div>
                 </div>
