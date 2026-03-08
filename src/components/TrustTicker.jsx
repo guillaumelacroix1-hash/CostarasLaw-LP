@@ -29,7 +29,7 @@ const TrustTicker = () => {
                             <span className="text-xl font-bold font-display text-primary dark:text-white tracking-wider">
                                 {item}
                             </span>
-                            <span className="material-symbols-outlined text-secondary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                            <span className="material-symbols-outlined text-primary dark:text-white text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                         </div>
                     ))}
                 </motion.div>
