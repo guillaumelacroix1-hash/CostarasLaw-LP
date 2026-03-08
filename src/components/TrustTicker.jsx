@@ -3,12 +3,9 @@ import { motion } from 'framer-motion';
 
 const TrustTicker = () => {
     const items = [
-        "★ Trusted by Ohio business owners for over 20 years",
-        "★ Thousands of clients protected",
-        "★ Ohio licensed attorneys",
-        "★ Trusted by Ohio business owners for over 20 years",
-        "★ Thousands of clients protected",
-        "★ Ohio licensed attorneys",
+        "Trusted by Ohio business owners for over 20 years",
+        "Thousands of clients protected",
+        "Ohio licensed attorneys",
     ];
 
     return (
@@ -24,25 +21,15 @@ const TrustTicker = () => {
                         duration: 20
                     }}
                 >
-                    {items.map((item, index) => (
+                    {[...items, ...items, ...items, ...items].map((item, index) => (
                         <div
                             key={index}
-                            className="px-12 flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity"
+                            className="px-8 flex items-center gap-8 opacity-80 hover:opacity-100 transition-opacity"
                         >
                             <span className="text-xl font-bold font-display text-primary dark:text-white tracking-wider">
                                 {item}
                             </span>
-                        </div>
-                    ))}
-                    {/* Duplicate for seamless looping */}
-                    {items.map((item, index) => (
-                        <div
-                            key={`dup-${index}`}
-                            className="px-12 flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity"
-                        >
-                            <span className="text-xl font-bold font-display text-primary dark:text-white tracking-wider">
-                                {item}
-                            </span>
+                            <span className="material-symbols-outlined text-secondary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                         </div>
                     ))}
                 </motion.div>

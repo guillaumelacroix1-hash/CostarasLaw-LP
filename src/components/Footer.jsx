@@ -24,12 +24,12 @@ const Footer = () => {
                             duration: 30
                         }}
                     >
-                        {[...tickerItems, ...tickerItems].map((item, index) => (
-                            <div key={index} className="flex items-center gap-3">
-                                <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                                <span className="font-display font-extrabold text-primary uppercase tracking-widest text-sm">
+                        {[...tickerItems, ...tickerItems, ...tickerItems].map((item, index) => (
+                            <div key={index} className="flex items-center gap-12">
+                                <span className="font-display font-extrabold text-white uppercase tracking-widest text-sm">
                                     {item}
                                 </span>
+                                <span className="material-symbols-outlined text-white text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                             </div>
                         ))}
                     </motion.div>
