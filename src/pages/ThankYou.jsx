@@ -4,6 +4,18 @@ import { CheckCircle, Phone } from 'lucide-react';
 
 const ThankYou = () => {
     useEffect(() => {
+        // Trigger GTM pageview/conversion event
+        if (window.dataLayer) {
+            window.dataLayer.push({
+                event: 'pageview',
+                page_path: '/thank-you',
+                page_title: 'Thank You'
+            });
+            window.dataLayer.push({
+                event: 'generate_lead', // Standard event name for conversions
+            });
+        }
+
         // HighLevel/msgsndr dynamically resizes and handles logic if we include the script
         const script = document.createElement('script');
         script.src = "https://link.marketingfirepower.app/js/form_embed.js";
