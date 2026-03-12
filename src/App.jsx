@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -11,6 +11,17 @@ import DownloadModal from './components/DownloadModal';
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const location = useLocation();
+
+    // Trigger virtual pageview on route change for GTM / Adwords
+    useEffect(() => {
+        if (window.dataLayer) {
+            window.dataLayer.push({
+                event: 'virtual_pageview',
+                page_path: location.pathname + location.search,
+                page_title: document.title
+            });
+        }
+    }, [location]);
 
     return (
         <div className="min-h-screen bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark font-body transition-colors duration-300">
