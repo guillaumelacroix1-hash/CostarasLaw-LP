@@ -59,7 +59,7 @@ const ThankYou = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="max-w-2xl mx-auto mb-16 text-left bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-8"
+                    className="max-w-4xl mx-auto mb-16 text-left bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-8 md:p-10"
                 >
                     <h3 className="text-xl font-medium text-white mb-6">
                         You can ask questions about:
@@ -93,7 +93,7 @@ const ThankYou = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 md:p-10 shadow-2xl mb-12 w-full max-w-7xl mx-auto"
+                    className="bg-white rounded-3xl p-4 md:p-10 shadow-2xl mb-12 w-full max-w-7xl mx-auto"
                 >
                     <div className="w-full min-h-[700px]">
                         <iframe
