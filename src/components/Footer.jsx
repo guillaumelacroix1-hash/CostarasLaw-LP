@@ -74,8 +74,8 @@ const Footer = () => {
                     <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                         <p>© {new Date().getFullYear()} Costaras Law. All rights reserved.</p>
                         <div className="flex space-x-6 mt-4 md:mt-0">
-                            <a className="hover:text-white transition-colors" href="https://costaraslaw.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-                            <a className="hover:text-white transition-colors" href="https://costaraslaw.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+                            <Link className="hover:text-white transition-colors" to="/privacy-policy">Privacy Policy</Link>
+                            <Link className="hover:text-white transition-colors" to="/terms-of-service">Terms of Service</Link>
                         </div>
                     </div>
                 </div>
