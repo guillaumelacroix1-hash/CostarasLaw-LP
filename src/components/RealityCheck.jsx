@@ -34,8 +34,8 @@ const RealityCheck = () => {
                         transition={{ duration: 0.5, delay: 0 }}
                         className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group"
                     >
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                        <div className="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-5 mb-4">
+                            <div className="h-12 w-12 shrink-0 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
                                 <span className="material-symbols-outlined text-secondary text-2xl">warning</span>
                             </div>
                             <h3 className="font-display text-2xl font-semibold text-primary dark:text-white">The DIY Trap</h3>
@@ -55,8 +55,8 @@ const RealityCheck = () => {
                         className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group relative overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-full -mr-4 -mt-4"></div>
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                        <div className="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-5 mb-4">
+                            <div className="h-12 w-12 shrink-0 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
                                 <span className="material-symbols-outlined text-secondary text-2xl">shield</span>
                             </div>
                             <h3 className="font-display text-xl sm:text-2xl font-semibold text-primary dark:text-white leading-tight">Reducing Your Liability</h3>
@@ -75,8 +75,8 @@ const RealityCheck = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="bg-background-light dark:bg-surface-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800 group"
                     >
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="h-12 w-12 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                        <div className="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-5 mb-4">
+                            <div className="h-12 w-12 shrink-0 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
                                 <span className="material-symbols-outlined text-secondary text-2xl">person_off</span>
                             </div>
                             <h3 className="font-display text-2xl font-semibold text-primary dark:text-white">Piercing The Veil</h3>
